@@ -1,3 +1,19 @@
+/*importeren custom lego font*/
+@font-face {
+  font-family: 'jura';
+  src: url('../assets/fonts/jura.ttf') format('ttf');
+  /* font-weight: bold;
+  font-style: normal; */
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url('../assets/fonts/montserrat.ttf') format('ttf');
+}
+
+
+
+
+
 /*************/
 /* CSS RESET */
 /*************/
@@ -14,4 +30,72 @@
   button:not([disabled]) {
     cursor:pointer;
   }
+
+
+
   
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  --text-white: rgb(255 255 255);
+  --background-black: rgb(27 28 30);
+  --decoration-blue: rgb(47 230 253);
+  --decoration-pink: rgb(255 51 169);
+  --decoration-purple: rgb(67 97 238);
+}
+
+
+
+
+
+/**************/
+/*** BASICS ***/
+/**************/
+h1 {
+  visibility: hidden;
+}
+
+h2 {
+  font-family: 'montserrat';
+  font-weight: 600;
+  font-size: 2em;
+
+  color: var(--text-white);
+}
+
+p {
+  font-family: 'jura';
+  font-weight: 400;
+  font-size: 1em;
+
+  color: var(--text-white);
+}
+
+
+
+
+
+/**************/
+/*** FOOTER ***/
+/**************/
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 4em;
+}
+
+
+
+
+
+/************/
+/*** MAIN ***/
+/************/
+main {
+  background-color: black;
+}
