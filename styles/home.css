@@ -1,0 +1,41 @@
+/*homepage*/
+main.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*brand en voorstellen*/
+main.home section:first-of-type {
+    background-color: aqua;
+    color: var(--text-white);
+    width: 100%;
+}
+
+/* main.home img {
+  width: 20em;
+  aspect-ratio: 1/1;
+  border-radius: 20em;
+}
+main.home a:first-of-type {
+  background-color: var(--decoration-blue);
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+} */
+
+/*Likes*/
+/* main.home button {
+  border: none;
+  background: none;
+  width: 27em;
+  position: relative;
+}
+main.home button:hover {
+  width: 30em;
+}
+main.home p:last-of-type {
+  font-size: 1.5em;
+}
+main.home p:last-of-type.liked {
+  animation: pulsatinglike 1.5s 0.5s linear infinite;
+} */

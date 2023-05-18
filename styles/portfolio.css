@@ -1,0 +1,71 @@
+/*tegeltjes*/
+main.portfolio ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  gap: 2em;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+main.portfolio ul li {
+  border: 0.3em solid var(--decoration-blue);
+  border-radius: 2em;
+  padding: 1.5em;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* min-height: 25em; */
+  background-color: var(--background-black);
+  position: relative;
+}
+main.portfolio ul li::before {
+  content: "";
+  border: 0.3em solid var(--decoration-blue);
+  border-radius: 2em;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* min-height: 25em; */
+  height: 103.5%;
+  position: absolute;
+  margin-left: -1.8em;
+  margin-top: -1.8em;
+  filter: drop-shadow(0 0 0.1em var(--decoration-blue))
+    drop-shadow(0 0 0.15em var(--decoration-blue));
+}
+
+main.portfolio ul li img {
+    max-height: 40em;
+}
+
+@media (min-width: 39em) {
+    main.portfolio ul li::before {
+        height: 102.8%;
+      }
+}
+
+@media (min-width: 45em) {
+    main.portfolio ul li::before {
+        height: 102.3%;
+      }
+}
+
+@media (min-width: 60em) {
+  main.portfolio ul {
+    grid-template-columns: 45vw 45vw;
+  }
+  main.portfolio ul li,
+  main.portfolio ul li::before {
+    width: 45vw;
+    padding: 2em;
+  }
+  main.portfolio ul li::before {
+    margin-left: -2.28em;
+    margin-top: -2.28em;
+    height: 102%;
+  }
+}
