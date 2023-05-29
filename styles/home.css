@@ -7,9 +7,266 @@ main.home {
 
 /*brand en voorstellen*/
 main.home section:first-of-type {
-    background-color: aqua;
-    color: var(--text-white);
-    width: 100%;
+  position: relative;
+  color: var(--text-white);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 50dvh;
+  max-width: 80em;
+  animation: lazyloading 1s linear;
+}
+main.home section:first-of-type img {
+  max-width: 90vw;
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+  top: 18%;
+}
+@keyframes lazyloading {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+main.home section:first-of-type h3:nth-of-type(2) {
+  align-self: flex-end;
+  text-align: right;
+}
+
+/*over mij*/
+main.home section:nth-of-type(3),
+main.home section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 8em;
+}
+main.home section:nth-of-type(2) p {
+  text-align: center;
+  max-width: 32em;
+}
+main.home section:nth-of-type(2) a {
+  background-color: var(--decoration-purple);
+  padding: 0.8em 4em 0.8em 4em;
+  border-radius: 0.9em;
+  color: var(--text-white);
+
+  margin: 2em;
+}
+
+/*skillz*/
+main.home section:nth-of-type(3) {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  height: 20em;
+  max-width: 25em;
+}
+main.home section:nth-of-type(3) h3{
+  margin-top: 3em;
+}
+main.home section:nth-of-type(3) div{
+  margin-top: 5em;
+  display: block;
+  width: 360%;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 5s linear infinite;
+}
+main.home section:nth-of-type(3) div:nth-of-type(2) {
+  margin-top: 8em;
+  animation: marquee 7s linear infinite;
+  /*reverse*/
+}
+main.home section:nth-of-type(3) div p{
+  font-size: 1.2em;
+  float: left;
+  width: 50%;
+  height: 0.5em;
+  color: var(--decoration-blue);
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -180%; }
+}
+
+
+
+
+/*portfolio*/
+main.home section:nth-of-type(4) {
+  width: 100%;
+  max-width: 80em;
+  margin-top: 5em;
+}
+main.home section:nth-of-type(4) ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+}
+main.home section:nth-of-type(4) li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  /* max-width: 22em; */
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-bottom: 2em;
+  box-shadow: 0 0 0.5em var(--decoration-blue);
+}
+main.home section:nth-of-type(4) img,
+main.home section:nth-of-type(4) a {
+  height: 100%;
+}
+
+
+
+
+main.home section:nth-of-type(5)> img {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  height: 100vh;
+  left: -150vw;
+}
+
+
+
+
+/*contact*/
+main.home section:nth-of-type(5) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-content: flex-end; */
+  /* width: 22em; */
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  width: 100%;
+}
+main.home section:nth-of-type(5) h2,
+main.home section:nth-of-type(5) p,
+main.home section:nth-of-type(5) a{
+  max-width: 30em;
+}
+
+
+
+@media (min-width: 39em) {
+  /*brand en voorstellen*/
+  main.home section:first-of-type img {
+    max-width: 80vw;
+    left: 5%;
+    top: 18%;
+  }
+  main.home section:first-of-type {
+    height: 60dvh;
+  }
+  main.home section:nth-of-type(5)> img {
+    height: 100vh;
+    left: -100vw;
+  }
+}
+
+@media (min-width: 45em) {
+  /*brand en voorstellen*/
+  main.home section:first-of-type img {
+    max-width: 80vw;
+    left: 5%;
+    top: 10%;
+  }
+  main.home section:first-of-type {
+    height: 57dvh;
+  }
+
+  main.home section:nth-of-type(5)> img {
+    height: 80vh;
+    left: -75vw;
+  }
+}
+
+@media (min-width: 50em) {
+  /*gridje aanpassing*/
+  main.home section:nth-of-type(4) ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 80em) {
+  /*brand en voorstellen*/
+  main.home section:first-of-type img {
+    max-width: 80vw;
+    left: 5%;
+    top: -5%;
+    max-height: 40em;
+  }
+  main.home section:first-of-type {
+    height: 70dvh;
+    max-height: 40em;
+  }
+
+  /*over mij*/
+  main.home section:nth-of-type(2) {
+    margin-top: 6em;
+  }
+
+  /*skillz*/
+  main.home section:nth-of-type(3) {
+    max-width: 50em;
+  }
+  main.home section:nth-of-type(3) div{
+    width: 340%;
+    animation: marquee 6s linear infinite;
+  }
+  main.home section:nth-of-type(3) div p{
+    font-size: 1.8em;
+    width: 50%;
+    height: 0.5em;
+  }
+
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -170%; }
+  }
+
+  /*portfolio*/
+  main.home section:nth-of-type(4) ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  main.home section:nth-of-type(4) {
+    margin-top: 8em;
+  }
+
+  main.home section:nth-of-type(5)> img {
+    height: 70em;
+    left: -30vw;
+    bottom: -10vw;
+  }
+  main.home section:nth-of-type(5) {
+    align-content: flex-end;
+    max-width: 80em;
+    margin-top: 15em;
+  }
+  main.home section:nth-of-type(5) h2,
+  main.home section:nth-of-type(5) p,
+  main.home section:nth-of-type(5) a{
+  max-width: 50vw;
+  max-width: 30em;
+}
 }
 
 /* main.home img {
