@@ -407,3 +407,19 @@ main {
     filter: none;
   }
 } */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-white: rgb(27 28 30);
+    --background-black: rgb(255 255 255);
+    --decoration-blue: rgb(67 97 238);
+    --decoration-pink: rgb(255 51 169);
+    --decoration-purple: rgb(67 97 238);
+  }
+  header > a img {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(36%) saturate(3678%) hue-rotate(219deg) brightness(97%) contrast(92%);
+  }
+  header > a:hover img {
+      filter: brightness(0) saturate(100%) invert(31%) sepia(36%) saturate(3678%) hue-rotate(219deg) brightness(97%) contrast(92%) drop-shadow(0 0 0.15em var(--decoration-blue));
+  }
+}

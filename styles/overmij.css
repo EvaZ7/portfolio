@@ -1,0 +1,11 @@
+.overmij {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overmij img {
+    width: 100%;
+}
+.overmij article {
+    max-width: 50em;
+}

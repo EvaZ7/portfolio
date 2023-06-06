@@ -296,3 +296,8 @@ main.home p:last-of-type {
 main.home p:last-of-type.liked {
   animation: pulsatinglike 1.5s 0.5s linear infinite;
 } */
+@media (prefers-color-scheme: light) {
+  main.home section:nth-of-type(2) a {
+    color: var(--background-black);
+  }
+}
