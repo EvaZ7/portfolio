@@ -58,6 +58,41 @@ main.detail section:first-of-type a {
   padding: 0.8em 4em 0.8em 4em;
   border-radius: 0.9em;
 }
+main.detail section:first-of-type a:hover {
+  background-color: var(--background-black);
+  color: var(--decoration-blue);
+  border: 0.2em solid var(--decoration-blue);
+  padding: 0.6em 3.8em 0.6em 3.8em;
+  position: relative;
+}
+main.detail section:first-of-type a:hover::before {
+  content: "";
+  border: 0.1em solid var(--decoration-blue);
+  border-radius: 0.9em;
+  left: 0;
+  top: 0;
+  width: 103%;
+  height: 2.65em;
+  margin-left: -0.15em;
+  margin-top: -0.15em;
+  position: absolute;
+  filter: drop-shadow(0 0 0.2em var(--decoration-blue))
+  drop-shadow(0 0 0.25em var(--decoration-blue))
+  drop-shadow(0 0 0.3em var(--decoration-blue));
+animation: flickering 0.3s 1s infinite;
+}
+@keyframes flickering {
+0% {
+opacity: 0.5;
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0.5;
+}
+}
+
 main.detail section:first-of-type img:first-of-type {
     width: 22em;
     padding: 0;

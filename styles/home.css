@@ -260,12 +260,16 @@ main.home section:nth-of-type(5) a{
     align-content: flex-end;
     max-width: 80em;
     margin-top: 15em;
+    margin-bottom: 15em;
   }
   main.home section:nth-of-type(5) h2,
   main.home section:nth-of-type(5) p,
   main.home section:nth-of-type(5) a{
   max-width: 50vw;
   max-width: 30em;
+}
+main.home section:nth-of-type(5) h2{
+  margin-top: -5em;
 }
 }
 
