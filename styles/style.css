@@ -1,11 +1,11 @@
 /*importeren custom font*/
 @font-face {
   font-family: "jura";
-  src: url("../assets/fonts/jura.ttf") format("ttf");
+  src: url("../portfolio/assets/fonts/jura.ttf") format("ttf");
 }
 @font-face {
   font-family: "montserrat";
-  src: url("../assets/fonts/montserrat.ttf") format("ttf");
+  src: url("../portfolio/assets/fonts/montserrat.ttf") format("ttf");
 }
 
 /*************/
@@ -408,7 +408,7 @@ main {
   }
 } */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --text-white: rgb(27 28 30);
     --background-black: rgb(255 255 255);
@@ -422,4 +422,4 @@ main {
   header > a:hover img {
       filter: brightness(0) saturate(100%) invert(31%) sepia(36%) saturate(3678%) hue-rotate(219deg) brightness(97%) contrast(92%) drop-shadow(0 0 0.15em var(--decoration-blue));
   }
-}
+} */
