@@ -1,11 +1,11 @@
 /*importeren custom font*/
 @font-face {
   font-family: "jura";
-  src: url("../portfolio/assets/fonts/jura.ttf") format("ttf");
+  src: url("../assets/fonts/jura.ttf") format("ttf");
 }
 @font-face {
   font-family: "montserrat";
-  src: url("../portfolio/assets/fonts/montserrat.ttf") format("ttf");
+  src: url("../assets/fonts/montserrat.ttf") format("ttf");
 }
 
 /*************/
