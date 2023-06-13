@@ -1,7 +1,7 @@
 /*importeren custom font*/
 @font-face {
   font-family: "jura";
-  src: url("../images/fonts/jura.ttf") format("ttf");
+  src: url("/portfolio/images/fonts/jura.ttf") format("ttf");
 }
 @font-face {
   font-family: "montserrat";
