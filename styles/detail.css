@@ -190,6 +190,9 @@ main.detail section:nth-of-type(2) {
     width: 140vw;
     right: -15em;
   }
+  lottie-player.none {
+    display: none;
+  }
   main.detail section:nth-of-type(3) p {
     width: 90vw;
     max-width: 28em;
