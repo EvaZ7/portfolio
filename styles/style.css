@@ -1,12 +1,12 @@
 /*importeren custom font*/
-@font-face {
+/* @font-face {
   font-family: "jura";
   src: url("./fonts/jura.ttf") format("ttf");
 }
 @font-face {
   font-family: "montserrat";
   src: url("./fonts/montserrat.ttf") format("ttf");
-}
+} */
 
 /*************/
 /* CSS RESET */
@@ -62,7 +62,7 @@ h3 {
 }
 
 p {
-  font-family: "jura";
+  font-family: 'Jura', sans-serif;
   font-weight: 400;
   font-size: 1em;
 
@@ -71,7 +71,7 @@ p {
 
 a,
 button {
-  font-family: "jura";
+  font-family: 'Jura', sans-serif;
   text-decoration: none;
   color: var(--decoration-blue);
 }
