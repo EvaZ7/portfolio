@@ -1,8 +1,8 @@
-header nav li:first-of-type {
+/* header nav li:first-of-type {
   color: var(--decoration-blue);
   text-decoration: underline;
   text-decoration-style: wavy;
-}
+} */
 main.portfolio {
   display: flex;
     flex-direction: column;
