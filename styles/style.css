@@ -46,7 +46,7 @@ body {
 }
 
 h2 {
-  font-family: "montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 2em;
 
@@ -54,7 +54,7 @@ h2 {
 }
 
 h3 {
-  font-family: "montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 2em;
 
@@ -100,7 +100,7 @@ header {
   color: var(--text-white);
   box-shadow: 0 -1em 0.8em 0.6em var(--decoration-blue);
 
-  font-family: "montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 
   display: grid;
@@ -190,7 +190,7 @@ nav ul li {
   text-decoration-style: wavy;
 }
 nav ul li a {
-  font-family: "montserrat";
+  font-family: 'Montserrat', sans-serif;
 }
 header nav.open ul {
   transform: translateX(0vw);
