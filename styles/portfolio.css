@@ -3,6 +3,12 @@
   text-decoration: underline;
   text-decoration-style: wavy;
 } */
+main.portfolio p > a {
+  padding: 0;
+}
+main.portfolio p > a:hover {
+  text-decoration: wavy underline;
+}
 main.portfolio {
   display: flex;
     flex-direction: column;
