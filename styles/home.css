@@ -158,8 +158,23 @@ main.home section:nth-of-type(4) li {
   aspect-ratio: 1/1;
   overflow: hidden;
   margin-bottom: 2em;
-  box-shadow: 0 0 0.5em var(--decoration-blue);
+  /* box-shadow: 0 0 0.5em var(--decoration-blue); */
+  border-radius: 0.5em;
 }
+main.home section:nth-of-type(4) li:hover {
+  box-shadow: 0 0 1em var(--decoration-blue);
+  transition: 0.5s;
+  position: relative;
+  outline: 0.2em solid var(--decoration-blue);
+}
+/* main.home section:nth-of-type(4) li:hover::after {
+  position: absolute;
+  content: "";
+  outline: 0.2em solid var(--decoration-blue);
+  left: -1rem;
+  top: 0rem;
+  z-index: 2;
+} */
 main.home section:nth-of-type(4) img,
 main.home section:nth-of-type(4) a {
   height: 100%;
@@ -195,6 +210,9 @@ main.home section:nth-of-type(5) h2,
 main.home section:nth-of-type(5) p,
 main.home section:nth-of-type(5) a{
   max-width: 30em;
+}
+main.home section:nth-of-type(5) a:hover {
+  text-decoration: wavy underline var(--decoration-blue);
 }
 
 
@@ -237,6 +255,12 @@ main.home section:nth-of-type(5) a{
   main.home section:nth-of-type(4) ul {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  /*achtergronf afbeelding*/
+  main.home section:nth-of-type(5)> img {
+    height: 90vh;
+    left: -30vw;
+    bottom: 20vh;
   }
 }
 
@@ -289,7 +313,7 @@ main.home section:nth-of-type(5) a{
   main.home section:nth-of-type(5)> img {
     height: 70em;
     left: -30vw;
-    bottom: -10vw;
+    bottom: -20vw;
   }
   main.home section:nth-of-type(5) {
     align-content: flex-end;
