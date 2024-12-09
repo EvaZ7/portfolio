@@ -136,6 +136,7 @@ h1 {
 }
 header > a img {
   z-index: -1;
+  max-width: 48px;
 }
 
 /*links naar github en linkedin*/
