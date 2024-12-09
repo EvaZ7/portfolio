@@ -138,6 +138,9 @@ header > a img {
   z-index: -1;
   max-width: 48px;
 }
+header > a:first-of-type {
+  max-width: 48px;
+}
 
 /*links naar github en linkedin*/
 header > a:nth-of-type(2),
